@@ -1,3 +1,15 @@
+# Context-aware Sockeye
+
+This repository contains the code for the paper Addressing Zero-Resource Domains Using Document-Level Context in Neural Machine Translation [[arXiv]](https://arxiv.org/abs/2004.14927) to appear at the Adapt-NLP 2021 workshop at EACL 2021. 
+
+The code expects the data be prepared in the following format: CONTEXT_SENTENCE <SEP> MAIN_SENTENCE
+
+The main parameter needed to use the different models is 
+    
+    --model-type
+
+where possible values are: *avg_emb_add* and *max_emb_add* for the _DomEmb model_, and *ctx_dec* for _CtxPool_ (other parameters need to be set to use the pooling option: *--use-doc-pool*, *--doc-pool-window* (int) and *--doc-pool-stride* (int)). For a full overview of all of the parameters, check sockeye/arguments.py
+
 # Sockeye
 
 [![PyPI version](https://badge.fury.io/py/sockeye.svg)](https://badge.fury.io/py/sockeye)
