@@ -2,7 +2,7 @@
 
 This repository contains the code for the paper Addressing Zero-Resource Domains Using Document-Level Context in Neural Machine Translation [[arXiv]](https://arxiv.org/abs/2004.14927) to appear at the Adapt-NLP 2021 workshop at EACL 2021. 
 
-The code expects the data be prepared in the following format: CONTEXT_SENTENCE <SEP> MAIN_SENTENCE
+The code expects the data be prepared in the following format: CONTEXT_SENTENCE  &lt;SEP&gt; MAIN_SENTENCE
 
 The main parameter needed to use the different models is 
     
